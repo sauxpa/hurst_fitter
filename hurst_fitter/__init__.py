@@ -1,1 +1,1 @@
-from .hurst_fitting import *
+from .main import *
