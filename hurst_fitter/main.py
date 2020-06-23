@@ -55,7 +55,7 @@ class Hurst_fitter():
 
     def objective_func(self, H: float) -> float:
         ys_fit = self.autocorr_frac_noise_range(H)
-        ys = acf(self.df_inc, nlags=self.n_lags)
+        ys = acf(self.df_inc, nlags=self.n_lags, fft=True)
         return np.linalg.norm(ys-ys_fit)
 
     def fit(self) -> None:
