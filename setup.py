@@ -5,7 +5,8 @@ with open("README.md", "r") as fh:
 
 setup(
     name='hurst_fitter',
-    version='0.0.4',
+    packages=['hurst_fitter'],
+    version='0.0.5',
     author="Patrick Saux",
     author_email="patrick.jr.saux@gmail.com",
     description="Library to estimate Hurst index of time series.",
